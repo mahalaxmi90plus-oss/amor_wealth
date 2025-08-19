@@ -212,7 +212,7 @@ premiumForm.addEventListener('submit', function(e) {
     const encodedMessage = encodeURIComponent(whatsappMessage);
     
     // Send to WhatsApp (REPLACE WITH YOUR NUMBER)
-    window.open(`https://wa.me/919137297231?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/918369465742?text=${encodedMessage}`, '_blank');
     
     // Show success message
     alert('Thank you! Our wealth specialist will contact you shortly.');
@@ -268,7 +268,7 @@ sipForm.addEventListener('submit', function(e) {
     const encodedMessage = encodeURIComponent(whatsappMessage);
     
     // Send to WhatsApp (REPLACE WITH YOUR NUMBER)
-    window.open(`https://wa.me/919137297231?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/918369465742?text=${encodedMessage}`, '_blank');
     
     // Show success message
     alert('Thank you! Our investment expert will contact you shortly.');

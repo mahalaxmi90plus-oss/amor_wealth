@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const encodedMessage = encodeURIComponent(whatsappMessage);
             
             // Send to WhatsApp
-            window.open(`https://wa.me/919137297231?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/918369465742?text=${encodedMessage}`, '_blank');
             
             // Prepare email subject and body
             const emailSubject = `New Support Request from ${name}`;
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const encodedMessage = encodeURIComponent(whatsappMessage);
             
             // Send to WhatsApp
-            window.open(`https://wa.me/919137297231?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/918369465742?text=${encodedMessage}`, '_blank');
             
             // Reset form
             modalForm.reset();
