@@ -1,0 +1,164 @@
+/* Entry Animations */
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+.step-up {
+    animation: stepUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.scale-up {
+    animation: scaleUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+/* Delays for staggered animations */
+.slide-in-right {
+    animation-delay: 0.2s;
+}
+
+.fade-in {
+    animation-delay: 0.4s;
+}
+
+.process-step:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.process-step:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.process-step:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.premium-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.premium-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.premium-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Keyframes */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes stepUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Hover Animations */
+.service-card:hover .card-icon {
+    transform: rotateY(180deg);
+    background-color: rgba(46, 204, 113, 0.1);
+}
+
+.card-icon {
+    transition: all 0.5s ease;
+}
+
+.process-step:hover .step-number {
+    background-color: var(--emerald-green);
+    transform: scale(1.1);
+}
+
+.step-number {
+    transition: var(--transition);
+}
+
+.premium-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll Reveal Animation */
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* Review Card Animation */
+.review-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.review-card.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
