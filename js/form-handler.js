@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const emailBody = whatsappMessage.replace(/\n/g, '%0D%0A');
             
             // Send email (will open user's default email client)
-            window.open(`mailto:contact@amorwealth.com?subject=${encodeURIComponent(emailSubject)}&body=${emailBody}`);
+            window.open(`mailto:contact@amorwealth.in?subject=${encodeURIComponent(emailSubject)}&body=${emailBody}`);
             
             // Reset form
             supportForm.reset();
